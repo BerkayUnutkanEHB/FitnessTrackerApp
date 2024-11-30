@@ -15,13 +15,21 @@ struct FitnessTabView: View {
                 .tag("Home")
                 .tabItem {
                     Image(systemName: "house")
+                    Text("Home")
                 }
                 .environmentObject(manager)
             ContentView()
                 .tag("Content")
                 .tabItem {
-                    Image(systemName: "person")
+                    Image(systemName: "list.dash")
+                    Text("Activity")
         }
+            GoalsView() 
+                            .tag("Goals")
+                            .tabItem {
+                                Image(systemName: "target")
+                                Text("Set Goals")
+                            }
     }
 }
 }
