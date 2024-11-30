@@ -34,7 +34,7 @@ class HealthManager: ObservableObject {
     let healthStore = HKHealthStore()
     
     @Published var activites: [String: Activity] = [:]
-
+    
     @Published var mockActivities: [String: Activity] = [
         "todaySteps": Activity(id: 0, title: "Today steps", subtitle: "Goal 10,000", image: "figure.walk", tintColor: .green, amount: "12,210"),
         "todayCalories": Activity(id: 1, title: "Today calories", subtitle: "Goal 900", image: "flame", tintColor: .red, amount: "1,245")
